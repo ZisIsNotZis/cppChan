@@ -1,4 +1,4 @@
-# C++ Borrowing Class
+# C++ Channel Class
 C++ channel implementation like what's in Go: Instead of using the traditional, compilcated, and troublesome mutex/condition\_variable to do data passing / thread progress syncing, it would be much easier for programmer to build inter-thread communitaion using channels. 
 
 Any thread can push data to a channel. After that, any thread (including the pusher) will be able to fetch that data from that channel. If a thread tries to push to a channel while it's full (or have no buffer), the thread will be freezed until free push is possible. Similarly, pull will be freezed when there's no data.
