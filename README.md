@@ -15,7 +15,7 @@ Here all datas are streamed, which means as soon as `func1` outputs the first bi
 
 # Usage
 ```
-#include "pipe.hpp"
+#include "chan.hpp"
 int main(){
 
 	chan<int,0> cH;	// create a channel with no buffer
